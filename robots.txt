@@ -1,0 +1,23 @@
+Sitemap: https://medihelp.center/sitemap.xml
+User-agent: *
+Disallow: https://medihelp.center/auth.php
+Disallow: https://medihelp.center/contact.php
+Disallow: https://medihelp.center/db.php
+Disallow: https://medihelp.center/logout.php
+Disallow: https://medihelp.center/uspeshna-registracia.php
+Disallow: https://medihelp.center/neuspeshno-vlizane.php
+
+Disallow: https://medihelp.center/en/auth.php
+Disallow: https://medihelp.center/en/contact.php
+Disallow: https://medihelp.center/en/db.php
+Disallow: https://medihelp.center/en/logout.php
+Disallow: https://medihelp.center/en/fail.php
+Disallow: https://medihelp.center/en/success.php
+
+#Begin Attracta SEO Tools Sitemap. Do not remove
+sitemap: http://cdn.attracta.com/sitemap/5541392.xml.gz
+#End Attracta SEO Tools Sitemap. Do not remove
+
+#Begin Attracta SEO Tools Sitemap. Do not remove
+sitemap: http://cdn.attracta.com/sitemap/5541393.xml.gz
+#End Attracta SEO Tools Sitemap. Do not remove

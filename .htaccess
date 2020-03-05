@@ -1,0 +1,49 @@
+
+RewriteOptions inherit
+# removes index from URL
+
+RewriteCond %{THE_REQUEST} ^GET.*index\.php [NC]
+RewriteRule (.*?)index\.php/*(.*) /$1$2 [R=301,NE,L]
+
+# Redirects non-www to www
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^medihelp.center [NC]
+RewriteRule ^(.*)$ http://www.medihelp.center/$1 [L,R=301]
+
+# Redirects from old pages to new pages
+
+Redirect /en/abdominal-surgery /en/abdominal-surgery.php
+Redirect /en/about-us /en/about-us.php
+Redirect /en/colonoscopy /en/colonoscopy.php
+Redirect /en/colorectal-surgery /en/colorectal-surgery.php
+Redirect /en/contacts /en/contacts.php
+Redirect /en/gallery /en/gallery.php
+Redirect /en/gastroscopy /en/gastroscopy.php
+Redirect /en/login /en/login.php
+Redirect /en/plastic-surgery /en/plastic-surgery.php
+Redirect /en/registration /en/registration.php
+Redirect /en/sitemap /en/sitemap.php
+Redirect /en/virtual-reality /en/virtual-reality.php
+
+Redirect /galeria /galeria.php
+Redirect /gastroskopia /gastroskopia.php
+Redirect /kolonoskopia /kolonoskopia.php
+Redirect /kolorektalna-hirurgia /kolorektalna-hirurgia.php
+Redirect /kontakti /kontakti.php
+Redirect /koremna-hirurgia /koremna-hirurgia.php
+Redirect /login /login.php
+Redirect /plastichna-hirurgia /plastichna-hirurgia.php
+Redirect /registration /registration.php
+Redirect /sitemap /sitemap.php
+Redirect /virtualna-realnost /virtualna-realnost.php
+Redirect /za-nas /za-nas.php
+
+Redirect /ZaNas.php /za-nas.php
+Redirect /bg/Kontakti.php /kontakti.php
+Redirect /bg/doctor.php /plastichna-hirurgia.php
+Redirect /VR.php /virtualna-realnost.php
+RewriteCond %{HTTP_HOST} ^medihel\.apple\.icnhost\.net$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.medihel\.apple\.icnhost\.net$
+RewriteRule ^/?$ "https\:\/\/www\.medihelp\.center\/" [R=301,L]
+
